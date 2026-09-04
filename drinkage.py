@@ -40,11 +40,11 @@ def brew_coffee(mode: Literal["light", "dark", "regular"]) -> None:
 
 
 @timer_decorator
-def brew_matcha():
+def brew_matcha() -> None:
     print('\nBrewing Matcha...')
     time.sleep(2)
     print("Matcha is ready!")
-    return f"Drink Match by {datetime.now() + timedelta(minutes=30)}"
+    return f"Drink Matcha by {datetime.now() + timedelta(minutes=30)}"
 
 def calculate_length(text: str) -> int:
     """
