@@ -41,7 +41,7 @@ def brew_coffee(mode: Literal["light", "dark", "regular"]) -> None:
 
 
 @timer_decorator
-def brew_matcha() -> None:
+def brew_matcha() -> str:
     print('\nBrewing Matcha...')
     time.sleep(2)
     print("Matcha is ready!")
